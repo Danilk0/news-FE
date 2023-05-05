@@ -1,0 +1,29 @@
+.modal{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f6f7;
+    min-height: 100vh;
+    padding: 30px;
+}
+.close{
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    text-decoration: none;
+    color: black;
+}
+.title{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.link{
+    color: dimgrey;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.date, .counter {
+    font-size: 20px;
+}
