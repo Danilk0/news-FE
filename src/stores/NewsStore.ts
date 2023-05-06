@@ -1,4 +1,4 @@
-import { observable, action, runInAction , makeAutoObservable} from "mobx"
+import { action, runInAction , makeAutoObservable} from "mobx"
 import { createContext } from "react"
 
 export interface IPreviewNews {
@@ -20,14 +20,9 @@ class NewsStore {
         fetch("http://localhost:8080/v0/news")
             .then((response) => response.json())
             .then((data) => {
-                console.log('before')
-                console.log(this.news);
-
                 runInAction(()=>{
                     this.news=data;
                 })
-                console.log("news");
-                console.log(this.news);
             })
             .catch((error) => {
                 console.log(error);
